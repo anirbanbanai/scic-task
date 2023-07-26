@@ -6,7 +6,7 @@ function romanToInt(romanNumeral) {
       'L': 50,
       'C': 100,
       'D': 500,
-      'M': 1000
+      'M': 1000,
     };
   
     let result = 0;
@@ -17,7 +17,7 @@ function romanToInt(romanNumeral) {
   
       if (nextCharValue > currentCharValue) {
         result += nextCharValue - currentCharValue;
-        i++; // Skip the next character as it has already been accounted for
+        i++; 
       } else {
         result += currentCharValue;
       }
@@ -26,8 +26,8 @@ function romanToInt(romanNumeral) {
     return result;
   }
   
-  // Example usage:
-  console.log(romanToInt("IX")); // Output: 9
-  console.log(romanToInt("XXI")); // Output: 21
-  console.log(romanToInt("LVIII")); // Output: 58
+
+  console.log(romanToInt("IX")); 
+  console.log(romanToInt("XX")); 
+  console.log(romanToInt("LVIII")); 
   
